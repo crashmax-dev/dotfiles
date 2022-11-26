@@ -27,7 +27,6 @@ fi
 unset rc
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-alias config='/usr/bin/git --git-dir=/home/crashmax/.cfg/ --work-tree=/home/crashmax'
 
 # pnpm
 export PNPM_HOME="/home/crashmax/.local/share/pnpm"
