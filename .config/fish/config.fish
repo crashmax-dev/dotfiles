@@ -6,6 +6,3 @@ starship init fish | source
 
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
-
-set -x GOPATH $HOME/go
-set -x PATH $PATH $GOPATH/bin
