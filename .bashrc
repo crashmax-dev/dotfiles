@@ -32,3 +32,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export PNPM_HOME="/home/crashmax/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# golang
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
