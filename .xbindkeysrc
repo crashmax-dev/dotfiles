@@ -1,0 +1,6 @@
+# Adjust magnifier zoom via Alt+mouse scroll. Increases/decreases by a factor
+# of 1.2. Sets a min of 1.0.
+"gsettings set org.gnome.desktop.a11y.magnifier mag-factor $(echo $(gsettings get org.gnome.desktop.a11y.magnifier mag-factor) \* 1.2 | bc -l)"
+    shift+b:4
+"gsettings set org.gnome.desktop.a11y.magnifier mag-factor $(echo v=$(gsettings get org.gnome.desktop.a11y.magnifier mag-factor) / 1.2\; if \(v\<1.0\) v=1.0\; v | bc -l)"
+    shift+b:5
