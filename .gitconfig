@@ -14,8 +14,5 @@
 	required = true
 [init]
 	defaultBranch = master
-[pull]
-	rebase = true
-	ff = only
 [push]
 	autosetupremote = true
