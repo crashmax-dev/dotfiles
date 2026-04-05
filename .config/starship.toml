@@ -28,6 +28,7 @@ ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
 deleted = "x"
+disabled = true
 
 # Last param in the first line/row
 [cmd_duration]
@@ -77,6 +78,24 @@ symbol = "🔴"
 format = '[\[$symbol$status_common_meaning$status_signal_name$status_maybe_int\]]($style)'
 map_symbol = true
 disabled = false
+
+[custom.pnpm]
+command = "pnpm -v"
+files = ["pnpm-lock.yaml"]
+style = "bold fg:#f69220"
+symbol = " "
+
+[custom.yarn]
+command = "yarn -v"
+files = ["yarn.lock"]
+style = "bold fg:#2188b6"
+symbol = " "
+
+[custom.npm]
+command = "npm -v"
+files = ["package-lock.json"]
+style = "bold fg:#ea2039"
+symbol = " "
 
 [aws]
 symbol = " "
